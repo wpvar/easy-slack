@@ -32,7 +32,7 @@ Other feutures:
 
 ## Contribution
 You can contribute to project on Github
-[Easy Slack Github](https://github.com/wpvar/easy slack)
+[Easy Slack Github](https://github.com/wpvar/easy-slack)
 
 ## Installation
 
