@@ -1,0 +1,117 @@
+.wpsl-error {
+    color: red;
+    font-weight: bold;
+}
+
+.wpsl-success {
+    color: green;
+    font-weight: bold;
+}
+
+.wpsl-inline {
+    display: inline-block;
+}
+
+.wpsl-refresh {
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.toplevel_page_wpsl .exopite-sof-header {
+    padding: 10px 10px 18px 10px !important;
+}
+
+.toplevel_page_wpsl .exopite-sof-search-wrapper {
+    float: right !important;
+}
+
+.toplevel_page_wpsl .checkbox__input:checked+.checkbox__switch:after {
+    left: 2em;
+}
+
+.toplevel_page_wpsl .checkbox__switch {
+    width: 4em;
+}
+
+.toplevel_page_wpsl .checkbox__switch:after {
+    border-radius: 50px;
+}
+
+.toplevel_page_wpsl .checkbox__input:checked+.checkbox__switch {
+    border-color: #4caf4f;
+    background-color: #4caf50;
+    border-radius: 50px;
+}
+
+.toplevel_page_wpsl .checkbox__switch {
+    border-radius: 50px;
+    background: #fafafa;
+    border-color: #f0f0f1;
+}
+
+.toplevel_page_wpsl .exopite-sof-nav-list-item {
+    margin: 6px !important;
+    background: #fff !important;
+    color: #636363 !important;
+    border: none !important;
+}
+
+.toplevel_page_wpsl .exopite-sof-nav-list-item.active {
+    border-left: 4px solid #cc2553 !important;
+    color: #000 !important;
+}
+
+.toplevel_page_wpsl .exopite-sof-wrapper .dashicons-before, .toplevel_page_wpsl .exopite-sof-wrapper .dashicons-before::before {
+    color: #636363 !important;
+}
+
+.rtl.toplevel_page_wpsl .exopite-sof-nav-list-item.active {
+    border-right: 4px solid #cc2553 !important;
+    border-left: none !important;
+}
+
+.toplevel_page_wpsl .exopite-sof-nav {
+    background: #fff !important;
+}
+
+.toplevel_page_wpsl .exopite-sof-header {
+    background-image: none !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    margin-bottom: -10px;
+}
+
+.toplevel_page_wpsl .exopite-sof-header h1 {
+    opacity: 0 !important;
+}
+
+.toplevel_page_wpsl .exopite-sof-search-wrapper {
+    display: none !important;
+}
+
+.toplevel_page_wpsl .exopite-sof-section>.exopite-sof-field {
+    border: none !important;
+}
+
+.rtl .toplevel_page_wpsl .exopite-sof-nav-list-item.active {
+    border-right: 4px solid #cc2553 !important;
+}
+
+.wp-slack_installation ul {
+    list-style: inside;
+}
+
+.wp-slack_installation ul {
+    font-size: 14px;
+}
+
+.wp-slack_install_img_cnt {
+    width: 100%;
+    text-align: center;
+}
+
+.wp-slack_install_img {
+    width: 70%;
+    height: auto;
+    padding: 40px 0;
+}

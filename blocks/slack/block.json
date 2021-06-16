@@ -1,0 +1,30 @@
+{
+	"apiVersion": 2,
+	"name": "wpsl-blocks/slack",
+	"title": "Slack Message",
+	"category": "wpsl",
+	"keywords": [ "slack", "notification", "wpslack", "mwssage", "wp-slack" ],
+	"attributes": {
+		"slack": {
+			"type": "string"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "left"
+		}
+	},
+	"example": {
+		"attributes": {
+			"preview" : true
+		}
+	},
+	"description": "Display Slack messages on WordPress.",
+	"supports": {
+		"html": true,
+		"alignment": true
+	},
+	"textdomain": "wpsl",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

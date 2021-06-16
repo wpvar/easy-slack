@@ -1,0 +1,751 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Easy Slack\n"
+"POT-Creation-Date: 2021-06-16 10:56+0430\n"
+"PO-Revision-Date: 2021-06-16 10:56+0430\n"
+"Last-Translator: wpvar.com <mai.wpvar@gmail.com>\n"
+"Language-Team: wpvar.com <mai.wpvar@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: slackify.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: actions/_core_updated_successfully.action.php:17
+#: actions/_core_updated_successfully.action.php:49
+msgid "Core update success"
+msgstr ""
+
+#: actions/_core_updated_successfully.action.php:18
+msgid "Send Slack notification when WordPress core updates successfully."
+msgstr ""
+
+#: actions/_core_updated_successfully.action.php:46
+#, php-format
+msgid ""
+":white_check_mark: WordPress on `%s` updated successfully to version `%s`."
+msgstr ""
+
+#: actions/_core_updated_successfully.action.php:51
+#, php-format
+msgid "WordPress updated to version `%s` :tada:"
+msgstr ""
+
+#: actions/_core_updated_successfully.action.php:54
+msgid "Version"
+msgstr ""
+
+#: actions/_core_updated_successfully.action.php:59
+#: actions/comment_post.action.php:80 actions/password_reset.action.php:63
+#: actions/set_user_role.action.php:75 actions/user_register.action.php:64
+#: actions/wp_error_added.action.php:72 actions/wp_login.action.php:68
+#: actions/wp_login_failed.action.php:63 actions/wp_mail.action.php:63
+msgid "Date"
+msgstr ""
+
+#: actions/comment_post.action.php:17 actions/comment_post.action.php:69
+msgid "New comment"
+msgstr ""
+
+#: actions/comment_post.action.php:18
+msgid ""
+"Send Slack notification when there is a new comment submission or pending "
+"review."
+msgstr ""
+
+#: actions/comment_post.action.php:65
+#, php-format
+msgid "%s User: `%s` posted a new comment."
+msgstr ""
+
+#: actions/comment_post.action.php:75 actions/password_reset.action.php:58
+#: actions/set_user_role.action.php:70 actions/wp_login.action.php:63
+#: actions/wp_login_failed.action.php:58
+msgid "Username"
+msgstr ""
+
+#: actions/comment_post.action.php:85
+msgid "Status"
+msgstr ""
+
+#: actions/comment_post.action.php:90
+msgid "Post"
+msgstr ""
+
+#: actions/password_reset.action.php:17 actions/password_reset.action.php:52
+msgid "Password reset"
+msgstr ""
+
+#: actions/password_reset.action.php:18
+msgid "Send Slack notification when a user resets password."
+msgstr ""
+
+#: actions/password_reset.action.php:48
+#, php-format
+msgid ":key: Password for user: `%s` has been reset successfully."
+msgstr ""
+
+#: actions/password_reset.action.php:54
+#, php-format
+msgid "Password for `%s` has been reset successfully. :bell:"
+msgstr ""
+
+#: actions/publish_post.action.php:18
+msgid "New post or post status change"
+msgstr ""
+
+#: actions/publish_post.action.php:19
+msgid ""
+"Send Slack notification when a new post publishes or an existing post&#39;s "
+"status changes."
+msgstr ""
+
+#: actions/publish_post.action.php:63
+msgid "Untitled"
+msgstr ""
+
+#: actions/publish_post.action.php:69
+#, php-format
+msgid ":sunglasses: New post `%s` now published on `%s`."
+msgstr ""
+
+#: actions/publish_post.action.php:70
+#, php-format
+msgid "We have a new post by `%s` :heart_eyes:"
+msgstr ""
+
+#: actions/publish_post.action.php:71
+msgid "New post"
+msgstr ""
+
+#: actions/publish_post.action.php:74
+#, php-format
+msgid ":zap: Status of post `%s` has been change to `%s` on `%s`."
+msgstr ""
+
+#: actions/publish_post.action.php:75
+#, php-format
+msgid "Post status change from `%s` to `%s` :speaker:"
+msgstr ""
+
+#: actions/publish_post.action.php:76
+msgid "Post status change"
+msgstr ""
+
+#: actions/publish_post.action.php:95
+msgid "Author"
+msgstr ""
+
+#: actions/publish_post.action.php:100
+msgid "Post Date"
+msgstr ""
+
+#: actions/publish_post.action.php:105
+msgid "Old status"
+msgstr ""
+
+#: actions/publish_post.action.php:110
+msgid "New status"
+msgstr ""
+
+#: actions/publish_post.action.php:115
+msgid "Title"
+msgstr ""
+
+#: actions/publish_post.action.php:120
+msgid "Excerpt"
+msgstr ""
+
+#: actions/publish_post.action.php:121
+msgid "Not defined"
+msgstr ""
+
+#: actions/set_user_role.action.php:17
+msgid "User Role Change"
+msgstr ""
+
+#: actions/set_user_role.action.php:18
+msgid "Send Slack notification when user role changes."
+msgstr ""
+
+#: actions/set_user_role.action.php:60
+#, php-format
+msgid "%s Role for %s `%s` has changed to `%s`."
+msgstr ""
+
+#: actions/set_user_role.action.php:64
+msgid "Role change"
+msgstr ""
+
+#: actions/set_user_role.action.php:66
+#, php-format
+msgid "Role for user `%s` has changed :sound:"
+msgstr ""
+
+#: actions/set_user_role.action.php:80
+msgid "New Role"
+msgstr ""
+
+#: actions/set_user_role.action.php:85
+msgid "Old Role"
+msgstr ""
+
+#: actions/user_register.action.php:17
+msgid "New user registration"
+msgstr ""
+
+#: actions/user_register.action.php:18
+msgid "Send Slack notification when a new user registers."
+msgstr ""
+
+#: actions/user_register.action.php:49
+#, php-format
+msgid ":mega: New user registered: `%s`"
+msgstr ""
+
+#: actions/user_register.action.php:53
+msgid "New registration"
+msgstr ""
+
+#: actions/user_register.action.php:55
+#, php-format
+msgid "We have a new user on our site: `%s` :tada:"
+msgstr ""
+
+#: actions/user_register.action.php:59
+msgid "Email"
+msgstr ""
+
+#: actions/wp_error_added.action.php:17
+msgid "WordPress errors"
+msgstr ""
+
+#: actions/wp_error_added.action.php:18
+msgid ""
+"Send Slack notification when an error occurs on WordPress. WordPress 5.6.0 "
+"or higher required. <b>Enable only for debug purposes. This may content "
+"highly sensitive data, <span style=\"color: red;\">DO NOT</span> enable on "
+"public workspaces</b>."
+msgstr ""
+
+#: actions/wp_error_added.action.php:60
+#, php-format
+msgid ":sos: Error `%s` detected, Please check it."
+msgstr ""
+
+#: actions/wp_error_added.action.php:62
+msgid "Error triggered"
+msgstr ""
+
+#: actions/wp_error_added.action.php:64
+#, php-format
+msgid "Error `%s` detected on our website, This may cause downtime."
+msgstr ""
+
+#: actions/wp_error_added.action.php:67
+msgid "Error code"
+msgstr ""
+
+#: actions/wp_error_added.action.php:77
+msgid "Error message"
+msgstr ""
+
+#: actions/wp_login.action.php:17
+msgid "User login success"
+msgstr ""
+
+#: actions/wp_login.action.php:18
+msgid "Send Slack notification when users or admins successfully logging in."
+msgstr ""
+
+#: actions/wp_login.action.php:53
+#, php-format
+msgid "%s %s: `%s` Logged in successfully."
+msgstr ""
+
+#: actions/wp_login.action.php:57
+msgid "New login"
+msgstr ""
+
+#: actions/wp_login.action.php:59
+#, php-format
+msgid "`%s` logged in successfully."
+msgstr ""
+
+#: actions/wp_login_failed.action.php:17
+msgid "User login failed"
+msgstr ""
+
+#: actions/wp_login_failed.action.php:18
+msgid "Send Slack notification when there is a failed login attempt."
+msgstr ""
+
+#: actions/wp_login_failed.action.php:46
+#, php-format
+msgid ":no_entry_sign: User `%s` failed to login."
+msgstr ""
+
+#: actions/wp_login_failed.action.php:48
+msgid "Failed login"
+msgstr ""
+
+#: actions/wp_login_failed.action.php:50
+#, php-format
+msgid "`%s` failed to login. Take action if this is a suspicious attempt."
+msgstr ""
+
+#: actions/wp_login_failed.action.php:53
+msgid "Error detail"
+msgstr ""
+
+#: actions/wp_mail.action.php:17
+msgid "Email send"
+msgstr ""
+
+#: actions/wp_mail.action.php:18
+msgid ""
+"Send Slack notification when an email outgoing to a user. <b>This may "
+"content sensitive data, <span style=\"color: red;\">DO NOT</span> enable on "
+"public workspaces</b>."
+msgstr ""
+
+#: actions/wp_mail.action.php:50
+#, php-format
+msgid ":email: Mail sent to `%s`."
+msgstr ""
+
+#: actions/wp_mail.action.php:53
+msgid "Mail Sent"
+msgstr ""
+
+#: actions/wp_mail.action.php:55
+#, php-format
+msgid "Email `%s` sent to `%s`."
+msgstr ""
+
+#: actions/wp_mail.action.php:58
+msgid "To"
+msgstr ""
+
+#: actions/wp_mail.action.php:68
+msgid "Content"
+msgstr ""
+
+#: inc/WPSL_Blocks.class.php:62
+msgid "Please enter the URL"
+msgstr ""
+
+#: inc/WPSL_Blocks.class.php:66
+msgid "URL is not valid, Please try again."
+msgstr ""
+
+#: inc/WPSL_Blocks.class.php:88
+msgid "You dont have permission to add messages from Slack."
+msgstr ""
+
+#: inc/WPSL_Blocks.class.php:95
+msgid "There is no text defined for this message."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#. Author of the plugin/theme
+#: inc/WPSL_Blocks.class.php:121 inc/WPSL_Options.class.php:49
+#: inc/WPSL_Options.class.php:52
+msgid "Easy Slack"
+msgstr ""
+
+#: inc/WPSL_Core.class.php:149 inc/WPSL_Core.class.php:194
+#, php-format
+msgid "An error occured: %s %s"
+msgstr ""
+
+#: inc/WPSL_Core.class.php:176
+msgid ""
+"Easy Slack is not connected to your Slack workspace. Please read "
+"Installation Guide on plugin&#39;s settings."
+msgstr ""
+
+#: inc/WPSL_Core.class.php:189
+msgid ""
+"Slack App connected to Easy Slack plugin is not invited on this channel. "
+"Invite it on Slack using this command: /invite @YourAppName"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:65 inc/WPSL_Options.class.php:79
+msgid "Default slack channel"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:66 inc/WPSL_Options.class.php:81
+msgid "You can override default channel on \"Actions\" tab."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:67 inc/WPSL_Options.class.php:82
+msgid "Define your default Slack channel."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:92 lib/options/options-class.php:708
+#: lib/options/options-class.php:731
+msgid "Settings"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:97
+msgid "Connection"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:98
+msgid "Connction status to slack.com&#39;s API service."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:99
+msgid "Plugin will not work if connection status is not set as \"Connected\"."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:105
+msgid "Bot User OAuth Token"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:106
+msgid "Please visit <b>\"Installation\"</b> tab."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:107
+msgid ""
+"You can generate Bot tokens after setting up an app. Please visit "
+"\"Installation\" tab for more informations."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:109
+msgid "xoxb-"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:142
+msgid "Enable"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:143
+msgid "Enable / Disable"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:149
+msgid "Slack channel"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:150
+msgid "This will override default channel."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:151
+msgid "Select Slack channel to post this action on."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:164
+msgid "Actions"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:170
+msgid "Options"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:171
+msgid "You can manage each action&#39;s settings here."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:182
+msgid "Permissions"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:188
+msgid "Block Roles"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:189
+msgid ""
+"Users with these roles will have access to insert or manage blocks generated "
+"by Easy Slack."
+msgstr ""
+
+#: inc/WPSL_Options.class.php:205
+msgid "<h1>Installation Guide</h1>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:206
+msgid ""
+"<p>Easy Slack requires an App and a token to connect WordPress to your Slack "
+"workspace. This guide will help you manage required steps to achieve this "
+"connection.</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:207
+msgid "<h2>1. Create a new app</h2>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:208
+msgid ""
+"<p>Login to your Slack acount and navigate to this page: <a href=\"https://"
+"api.slack.com/apps\" target=\"_blank\">api.slack.com/apps</a>.</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:209
+msgid "<p>Click on <b>\"Create New App\"</b>.</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:211
+msgid "<p>Next, select <b>\"From scratch\"</b>.</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:213
+msgid ""
+"<p>Now choose an app name and your workspace you want to install app on.</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:215
+msgid "<h2>2. Set scopes and permissions</h2>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:216
+msgid "<p>Go to <b>\"OAuth & Permissions\"</b>.</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:218
+msgid ""
+"<p>On <b>\"Bot Token Scopes\"</b> section, add following scopes: (You should "
+"add all of required scopes listed below, otherwise plugin may not work "
+"properly).</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:219
+msgid ""
+"\n"
+"                    <ul>\n"
+"                        <li>chat:write</li>\n"
+"                        <li>chat:write.public</li>\n"
+"                        <li>channels:read</li>\n"
+"                        <li>groups:read</li>\n"
+"                        <li>im:read</li>\n"
+"                        <li>mpim:read</li>\n"
+"                        <li>channels:history</li>\n"
+"                        <li>groups:history</li>\n"
+"                        <li>im:history</li>\n"
+"                        <li>mpim:history</li>\n"
+"                    </ul>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:233
+msgid "<h2>3. Install App on workspace</h2>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:234
+msgid ""
+"<p>After setting up scopes, navigate to top of the page and click on <b>"
+"\"Install to Workspace\"</b>. You will be redirected to authentication page, "
+"allow scopes by clicking on <b>\"Allow\"</b>.</b></p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:236
+msgid "<h2>4. Copy Token</h2>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:237
+msgid ""
+"<p>Now you will be redirected to App panel where you can see your token. "
+"Copy this token and paste it in Easy Slack&#39;s settings page (<b>\"Bot "
+"User OAuth Token\"</b> field).</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:239
+msgid "<h2>5. Invite app to channels</h2>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:240
+msgid ""
+"<p>In order to use Slack Message Block, you should invite your app to "
+"channels using this command: (Otherwise you will not be able to display "
+"Slack messages on your WordPress). </p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:241
+msgid "<p><b>/invite @YourAppName</b></p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:242
+msgid "<p>change @YourAppName to your App&#39;s name.</p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:244
+msgid "<p></p>"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:248
+msgid "Installation"
+msgstr ""
+
+#: inc/WPSL_Options.class.php:336
+msgid "Installation Guide"
+msgstr ""
+
+#: lib/options/fields/attached.php:45
+#, php-format
+msgid "There is no attachment with type %s for this %s."
+msgstr ""
+
+#: lib/options/fields/backup.php:41
+msgid "copy-paste your backup string here"
+msgstr ""
+
+#: lib/options/fields/backup.php:42
+msgid "Are you sure, you want to overwrite existing options?"
+msgstr ""
+
+#: lib/options/fields/backup.php:42
+msgid "Import a Backup"
+msgstr ""
+
+#: lib/options/fields/backup.php:46
+msgid "Download Backup"
+msgstr ""
+
+#: lib/options/fields/backup.php:49
+msgid "Please be sure for reset all of framework options."
+msgstr ""
+
+#: lib/options/fields/backup.php:50
+msgid "Are you sure, you want to reset all options?"
+msgstr ""
+
+#: lib/options/fields/backup.php:50
+msgid "Reset All Options"
+msgstr ""
+
+#: lib/options/fields/gallery.php:25
+msgid "Add to gallery"
+msgstr ""
+
+#: lib/options/fields/gallery.php:26
+msgid "Select images for gallery"
+msgstr ""
+
+#: lib/options/fields/gallery.php:27
+msgid "Add"
+msgstr ""
+
+#: lib/options/fields/group.php:350
+msgid "Max items:"
+msgstr ""
+
+#: lib/options/fields/image.php:77
+msgid "Add Image"
+msgstr ""
+
+#: lib/options/fields/typography.php:81
+msgid "Web Safe Fonts"
+msgstr ""
+
+#: lib/options/fields/typography.php:87
+msgid "Google Fonts"
+msgstr ""
+
+#: lib/options/fields/typography.php:177
+msgid "Error! Can not load json file."
+msgstr ""
+
+#: lib/options/fields/upload.php:73
+msgid "Drop files here"
+msgstr ""
+
+#: lib/options/fields/upload.php:83
+msgid "Select files"
+msgstr ""
+
+#: lib/options/fields/upload.php:86
+msgid "Upload"
+msgstr ""
+
+#: lib/options/fields/upload.php:90
+msgid "Processing dropped files..."
+msgstr ""
+
+#: lib/options/fields/upload.php:108 lib/options/fields/upload.php:140
+msgid "Cancel"
+msgstr ""
+
+#: lib/options/fields/upload.php:110
+msgid "Retry"
+msgstr ""
+
+#: lib/options/fields/upload.php:112
+msgid "Delete"
+msgstr ""
+
+#: lib/options/fields/upload.php:121
+msgid "Close"
+msgstr ""
+
+#: lib/options/fields/upload.php:129
+msgid "No"
+msgstr ""
+
+#: lib/options/fields/upload.php:131
+msgid "Yes"
+msgstr ""
+
+#: lib/options/fields/upload.php:142
+msgid "Ok"
+msgstr ""
+
+#: lib/options/fields/upload.php:181
+msgid "Max amount of files: "
+msgstr ""
+
+#: lib/options/fields/upload.php:182
+msgid "Max file upload size: "
+msgstr ""
+
+#: lib/options/fields/video.php:74
+msgid "Add Video"
+msgstr ""
+
+#: lib/options/options-class.php:794 lib/options/options-class.php:798
+msgid "Plugin Options"
+msgstr ""
+
+#: lib/options/options-class.php:1498
+msgid "ERROR:"
+msgstr ""
+
+#: lib/options/options-class.php:1499
+msgid "This field class is not available!"
+msgstr ""
+
+#: lib/options/options-class.php:1571
+msgid "Saving..."
+msgstr ""
+
+#: lib/options/options-class.php:1571
+msgid "Saved Successfully."
+msgstr ""
+
+#: lib/options/options-class.php:1594 lib/options/options-class.php:1609
+msgid "Save Settings"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/wpvar/easy-slack"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Integrate and monitor your WordPress with Slack"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/wpvar/easy-slack/blob/master/README.md"
+msgstr ""
