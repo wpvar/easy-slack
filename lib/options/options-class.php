@@ -377,7 +377,7 @@ if ( ! class_exists( 'Exopite_Simple_Options_Framework' ) ) :
 		protected function define_shared_hooks() {
 
 			// Upload hooks are only required for both,
-			Exopite_Simple_Options_Framework_Upload::add_hooks();
+			//Exopite_Simple_Options_Framework_Upload::add_hooks();
 
 			//scripts and styles
 			add_action( 'admin_enqueue_scripts', array( $this, 'load_scripts_styles' ) );
@@ -606,7 +606,7 @@ if ( ! class_exists( 'Exopite_Simple_Options_Framework' ) ) :
 				header( 'Expires: 0' );
 
 				// Using json_encode()
-				echo json_encode( get_option( $option_key ) );
+				echo esc_attr( json_encode( get_option( $option_key ) ) );
 
 			}
 
@@ -635,7 +635,7 @@ if ( ! class_exists( 'Exopite_Simple_Options_Framework' ) ) :
 
 			require_once 'multilang-class.php';
 			require_once 'fields-class.php';
-			require_once 'upload-class.php';
+			//require_once 'upload-class.php';
 			require_once 'sanitize-class.php';
 
 		}
@@ -1056,42 +1056,6 @@ if ( ! class_exists( 'Exopite_Simple_Options_Framework' ) ) :
                     }
 
                 }
-
-			}
-
-			// Specific to Metabox
-			if ( $this->is_metabox() ) {
-
-				// if this is metabox, $posted_data is post_id we are saving
-				$post_id = $posted_data;
-				if ( $this->is_options_simple() ) {
-					$posted_data = $_POST;
-				} else {
-
-					if ( isset( $_POST[ $this->unique ] ) ) {
-						$posted_data = $_POST[ $this->unique ];
-					} else {
-						return false;
-					}
-
-				}
-
-				if ( $posted_data === null ) return;
-
-				// Stop WP from clearing custom fields on autosave
-				if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-					return null;
-				}
-
-				// Prevent quick edit from clearing custom fields
-				if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
-					return null;
-				}
-
-				// If the post type is not in our post_type array, do nothing
-				if ( ! in_array( get_post_type( $post_id ), $this->config['post_types'] ) ) {
-					return null;
-				}
 
 			}
 
@@ -1568,7 +1532,7 @@ if ( ! class_exists( 'Exopite_Simple_Options_Framework' ) ) :
 		 */
 		public function display_options_page_header() {
 
-			echo '<form method="post" action="options.php" enctype="multipart/form-data" name="' . $this->unique . '" class="exopite-sof-form-js ' . $this->unique . '-form" data-save="' . esc_attr__( 'Saving...', 'exopite-sof' ) . '" data-saved="' . esc_attr__( 'Saved Successfully.', 'exopite-sof' ) . '">';
+			echo '<form method="post" action="options.php" enctype="multipart/form-data" name="' . esc_attr($this->unique) . '" class="exopite-sof-form-js ' . esc_attr($this->unique) . '-form" data-save="' . esc_attr__( 'Saving...', 'exopite-sof' ) . '" data-saved="' . esc_attr__( 'Saved Successfully.', 'exopite-sof' ) . '">';
 
 			settings_fields( $this->unique );
 			do_settings_sections( $this->unique );
@@ -1581,7 +1545,7 @@ if ( ! class_exists( 'Exopite_Simple_Options_Framework' ) ) :
 			$option_title = ( ! empty( $this->config['option_title'] ) ) ? $this->config['option_title'] : $this->config['title'];
 
 			echo '<header class="exopite-sof-header exopite-sof-header-js">';
-			echo '<h1>' . $option_title . $current_language_title . '</h1>';
+			echo wp_kses_post('<h1>' . $option_title . $current_language_title . '</h1>');
 
 			/*
 			 * Display search box if is enabled

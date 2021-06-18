@@ -330,7 +330,7 @@ class WPSL_Core
      */
     public function remove_notices()
     {
-        $page = isset($_GET['page']) ? esc_attr($_GET['page']) : false;
+        $page = isset($_GET['page']) ? sanitize_title($_GET['page']) : false;
 
         if ($page !== false && $page === 'wpsl') {
             remove_all_actions('admin_notices');

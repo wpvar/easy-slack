@@ -61,42 +61,74 @@ class WPSL_Blocks
         if ($link == '') {
             return __('Please enter the URL', 'wpsl');
         }
-    
+
         if (!mb_strpos($link, 'slack.com/archives/')) {
             return __('URL is not valid, Please try again.', 'wpsl');
         }
-    
+
         $id = explode('/', esc_attr($link));
         $channel = $id[4];
         $ts = $id[5];
-    
+
         $slack = new WPSL_Core;
         $slack = $slack->message($channel, $ts);
         $text = $slack['messages'][0]['text'];
         $attach_text = $slack['messages'][0]['attachments'][0]['text'];
-    
+
         $parse = new WPSL_Parser();
-    
+
         $wpsl_roles = new WPSL_Core;
         $wpsl_roles = $wpsl_roles->option('block-roles', false, 'administrator');
-    
+
         ob_start();
-        if(!empty($slack['error']) && $slack['error'] == 1) {
+        if (!empty($slack['error']) && $slack['error'] == 1) {
             $html = $slack['content'];
-        }
-        elseif(empty(array_intersect($wpsl_roles, (array) wp_get_current_user()->roles)) && $wpsl_roles != 'administrator') {
+        } elseif (empty(array_intersect($wpsl_roles, (array) wp_get_current_user()->roles)) && $wpsl_roles != 'administrator') {
             $html = __('You dont have permission to add messages from Slack.', 'wpsl');
-        }
-        elseif (!empty($text)) {
+        } elseif (!empty($text)) {
             $html = $parse->parser(wp_kses($text, wp_kses_allowed_html()), $link);
         } elseif (!empty($attach_text)) {
             $html = $parse->parser(wp_kses($attach_text, wp_kses_allowed_html()), $link);
         } else {
             $html = __('There is no text defined for this message.', 'wpsl');
         }
-    
-        echo '<div class="wp-slack_response wp-slack_' . $block_attributes['alignment'] . '">' . $html . '</div>';
-    
+
+        $allowed = (array) wp_kses_allowed_html();
+        $extra = array(
+            'div'     => array('class' => true),
+            'a'     => array('rel' => true),
+            'svg'   => array(
+                'class' => true,
+                'aria-hidden' => true,
+                'aria-labelledby' => true,
+                'role' => true,
+                'xmlns' => true,
+                'width' => true,
+                'height' => true,
+                'viewbox' => true,
+                'style' =>  true
+            ),
+            'g'     => array('fill' => true),
+            'title' => array('title' => true),
+            'path'  => array('d' => true, 'fill' => true,),
+            'img'        => array(
+                'alt'      => true,
+                'align'    => true,
+                'border'   => true,
+                'height'   => true,
+                'hspace'   => true,
+                'loading'  => true,
+                'longdesc' => true,
+                'vspace'   => true,
+                'src'      => true,
+                'usemap'   => true,
+                'width'    => true,
+                'style'    => true,
+            )
+        );
+        $allowed = array_merge($allowed, $extra);
+        echo wp_kses('<div class="wp-slack_response wp-slack_' . $block_attributes['alignment'] . '">' . $html . '</div>', $allowed);
+
         return ob_get_clean();
     }
 
